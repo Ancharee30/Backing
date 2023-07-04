@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_14/home.dart';
 import 'package:get/get.dart';
 
-import 'choice.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Choice(), //error (showLoginPage: () {  },),
+      home: HomeScreen(), //error (showLoginPage: () {  },),
     );
   }
 }

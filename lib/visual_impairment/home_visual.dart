@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_14/visual_impairment/login_visual.dart';
+import 'package:flutter_application_14/visual_impairment/setting_visual.dart';
 import 'package:flutter_application_14/visual_impairment/warning_visual.dart';
 
 class HomeVisual extends StatelessWidget {
@@ -36,7 +38,10 @@ class Body extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeVisual()),
+                    MaterialPageRoute(
+                        builder: (context) => RegisterVisual(
+                              showLoginPage: () {},
+                            )),
                   );
                 },
                 child: Align(
@@ -71,7 +76,10 @@ class Body extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeVisual()),
+                      MaterialPageRoute(
+                          builder: (context) => RegisterVisual(
+                                showLoginPage: () {},
+                              )),
                     );
                   },
                   child: Image.asset(
@@ -202,7 +210,7 @@ class Body extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeVisual()),
+                      MaterialPageRoute(builder: (context) => SettingVisual()),
                     );
                   },
                   child: Image.asset(

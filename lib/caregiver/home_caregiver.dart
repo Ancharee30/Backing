@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_14/caregiver/setting_caregiver.dart';
 import 'package:flutter_application_14/caregiver/warning.dart';
+import 'package:flutter_application_14/visual_impairment/login_visual.dart';
 
 class HomeCaregiver extends StatelessWidget {
   const HomeCaregiver({super.key});
@@ -36,7 +38,10 @@ class Body extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeCaregiver()),
+                    MaterialPageRoute(
+                        builder: (context) => RegisterVisual(
+                              showLoginPage: () {},
+                            )),
                   );
                 },
                 child: Align(
@@ -72,7 +77,10 @@ class Body extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeCaregiver()),
+                      MaterialPageRoute(
+                          builder: (context) => RegisterVisual(
+                                showLoginPage: () {},
+                              )),
                     );
                   },
                   child: Image.asset(
@@ -194,7 +202,8 @@ class Body extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomeCaregiver()),
+                      MaterialPageRoute(
+                          builder: (context) => SettingCaregiver()),
                     );
                   },
                   child: Image.asset(

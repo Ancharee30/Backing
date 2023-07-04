@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'caregiver/home_caregiver.dart';
-import 'visual_impairment/home_visual.dart';
+import 'auth/auth_page.dart';
+import 'auth/auth_v.dart';
 
 class Choice extends StatelessWidget {
   const Choice({super.key});
@@ -167,7 +167,7 @@ class Body extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const HomeVisual()),
+                    MaterialPageRoute(builder: (context) => const Auth()),
                   );
                 },
                 child: Align(
@@ -243,8 +243,7 @@ class Body extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => const HomeCaregiver()),
+                    MaterialPageRoute(builder: (context) => const AuthPage()),
                   );
                 },
                 child: Align(
